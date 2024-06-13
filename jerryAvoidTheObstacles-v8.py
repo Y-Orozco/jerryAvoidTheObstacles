@@ -48,10 +48,10 @@ class Player(pygame.sprite.Sprite):
         self.gridy = gridy
         
         #Mouse images for animating frame
-        self.mouseSurf1 = pygame.transform.scale(pygame.image.load('graphics/Player/1.png'), (100, 75)).convert_alpha()
-        self.mouseSurf2 = pygame.transform.scale(pygame.image.load('graphics/Player/2.png'), (100, 75)).convert_alpha()
-        self.mouseSurf3 = pygame.transform.scale(pygame.image.load('graphics/Player/3.png'), (100, 75)).convert_alpha()
-        self.mouseSurf4 = pygame.transform.scale(pygame.image.load('graphics/Player/4.png'), (100, 75)).convert_alpha()
+        self.mouseSurf1 = pygame.transform.scale(pygame.image.load('graphics/Player/mouse1.png'), (100, 75)).convert_alpha()
+        self.mouseSurf2 = pygame.transform.scale(pygame.image.load('graphics/Player/mouse2.png'), (100, 75)).convert_alpha()
+        self.mouseSurf3 = pygame.transform.scale(pygame.image.load('graphics/Player/mouse3.png'), (100, 75)).convert_alpha()
+        self.mouseSurf4 = pygame.transform.scale(pygame.image.load('graphics/Player/mouse4.png'), (100, 75)).convert_alpha()
 
         #List for animating frame mouse images
         self.mouseWalk = [self.mouseSurf1, self.mouseSurf2, self.mouseSurf3, self.mouseSurf4]
@@ -266,7 +266,7 @@ backgroundSurf = pygame.transform.scale(pygame.image.load('graphics/isometricRoo
 backgroundRect = backgroundSurf.get_rect(topleft = (50, 2))
 
 #Main Character/Protagonist
-mouseSurf = pygame.transform.scale(pygame.image.load('graphics/Player/1.png'), (100, 75)).convert_alpha()
+mouseSurf = pygame.transform.scale(pygame.image.load('graphics/Player/mouse1.png'), (100, 75)).convert_alpha()
 mousePlayer = Player(30,30)
 
 #Obstacles/Antagonist
